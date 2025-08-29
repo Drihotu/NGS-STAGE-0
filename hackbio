@@ -1,64 +1,61 @@
-# To print my name 
-cynthiadanboyi05@cloudshell:~$ echo "Cynthia Danboyi"    
-# To make a folder named cynthia_danboyi
-cynthiadanboyi05@cloudshell:~$ mkdir cynthia_danboyi   
-# TO make another folder named biocomputing
-cynthiadanboyi05@cloudshell:~$  mkdir biocomputing       
-cynthiadanboyi05@cloudshell:~$ ls     # this command lists all the folders
-# To change the current directory to biocomputing
-cynthiadanboyi05@cloudshell:~$ cd biocomputing  
-#  To download a file from the web
-cynthiadanboyi05@cloudshell:~/biocomputing$ wget https://raw.githubusercontent.com/josoga2/dataset-repos/main/wildtype.fna 
-cynthiadanboyi05@cloudshell:~/biocomputing$   Wget https: // raw.githubusercontent.com/josoga2/dataset-repos/main/wildtype.gbk 
-cynthiadanboyi05@cloudshell:~/biocomputing$  ls # lists all directory content including wildtype.gbk and wildtype.fna
-# To move the file wildtype.fna to the folder cynthia_danboyi  
-cynthiadanboyi05@cloudshell:~/biocomputing$ mv wildtype.fna cynthia_danboyi    
-# To check if the file is mutant 
-cynthiadanboyi05@cloudshell:~/biocomputing$ grep  -i 'tatata' cynthia_danboyi 
-# To check if the file is wild 
-cynthiadanboyi05@cloudshell:~/biocomputing$ grep  -i 'tata' cynthia_danboyi 
-# To print only the highlighted text
-cynthiadanboyi05@cloudshell:~/biocomputing$ grep -o 'tatata' cynthia_danboyi > mutant_file.txt
-# To print the number of lines excluding the header
-cynthiadanboyi05@cloudshell:~/biocomputing$  head -n -1 wildtype.gbk | wc -l  
-# To print the sequence length of the gbk file
-cynthiadanboyi05@cloudshell:~/biocomputing$  grep "^LOCUS" wildtype.gbk | awk '{print $3}' 
-# To print the source organism of the gbk file
-cynthiadanboyi05@cloudshell:~/biocomputing$  grep "SOURCE" wildtype.gbk | head -n 1  
-# To list the genes in the gbk file
-cynthiadanboyi05@cloudshell:~/biocomputing$  grep "/gene=" wildtype.gbk 
-# To clear the terminal
-cynthiadanboyi05@cloudshell:~/biocomputing$  clear
-history # to print all commands used
-# To list the file in the two folder
-cynthiadanboyi05@cloudshell:~/biocomputing$ ls
+Project 1
+#1. To print my name 
+$ echo "Cynthia Danboyi"    
+#2. To make a folder named cynthia_danboyi
+$ mkdir cynthia_danboyi   
+#3. To make another folder named biocomputing
+$  mkdir biocomputing && cd bio computing       
+#4.  To download 3 files from the web
+$wget https://raw.githubusercontent.com/josoga2/dataset-repos/main/wildtype.fna 
+$wget https://raw.githubusercontent.com/josoga2/dataset-repos/main/wildtype.gbk 
+$wget https://raw.githubusercontent.com/josoha2/dataset-repos/main/wildtype.gbk
+#5. To remove duplicates
+$rm wild type.gbk.1
+#6.  To move the file wildtype.fna to the folder cynthia_danboyi  
+$ mv wildtype.fna~/cynthia_danboyi    
+#7. To check if the file is mutant or wild type ('tatata' or 'tata')
+$grep  -o 'tatata' wildtype.fna
+$grep -o 'tata' wild type.fna
+#8. To print only the highlighted text
+$ grep -i'tata' wildtype.fna > mutant_file.txt
+#9. To print the number of lines excluding the header
+$head -n -1 wildtype.gbk | wc -l  
+#10.To print the sequence length of the gbk file
+$grep "^LOCUS" wildtype.gbk | awk '{print $3}' 
+#11. To print the source organism of the gbk file
+$grep "SOURCE" wildtype.gbk | head -n 1  
+#12. To list the genes in the gbk file
+$grep "/gene=" wildtype.gbk 
+#13. To clear the terminal
+$clear && history
+#14. To list the file in the two folder
+$ls
+
 
 Project 2
-# To download the miniconda installer
-conda activate base
-# To create an environment named funtools
-(base) cynthiadanboyi05@cloudshell:~$ conda create -n funtools 
-# To activate the environment funtools
-$ Conda activate funtools 
-#To install figlet
-(funtools) cynthiadanboyi05@cloudshell:~$ Conda install -c conda -forge figlet 
-# To print the name cynthia
+#1. To download the miniconda installer
+$conda activate 
+#2. To create an environment named funtools
+$conda create -n funtools 
+#3. To activate the environment funtools
+$conda activate funtools 
+#4. To install figlet
+$conda install -c conda -forge figlet 
+#5. To print the name cynthia
 Figlet cynthia 
-# To install bwa
-Conda install  -c bioconda bwa 
-# To install blast
-Conda install -c bioconda blast 
-# To install samtools
-Conda install  -c bioconda samtools 
-# To install bedtools
-Conda install  -c bioconda bedtools
-# To install spades.py
-Conda install  -c bioconda spades.py 
-# To install beftools
-Conda install  -c bioconda beftools 
-# To install fastp 
-Conda install -c bioconda fastp
-# To install multiqc
-Conda install  -c bioconda multiqc 
-
-Linkedin link:
+#6. To install bwa through the bioconda channel
+$conda install  -c bioconda bwa 
+#7.To install blast through the bioconda channel 
+$conda install -c bioconda blast 
+#8.To install samtools through the bioconda channel 
+$conda install  -c bioconda samtools 
+#9. To install bedtools through the bioconda channel 
+$conda install  -c bioconda bedtools
+#10. To install spades.py through the bioconda channel 
+$conda install  -c bioconda spades.py 
+#11. To install beftools through the bioconda channel 
+$conda install  -c bioconda beftools 
+#12.To install fastp through the bioconda channel 
+$conda install -c bioconda fastp
+#13. To install multiqc through the bioconda channel 
+$conda install  -c bioconda multiqc
