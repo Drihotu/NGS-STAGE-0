@@ -1,0 +1,64 @@
+# To print my name 
+cynthiadanboyi05@cloudshell:~$ echo "Cynthia Danboyi"    
+# To make a folder named cynthia_danboyi
+cynthiadanboyi05@cloudshell:~$ mkdir cynthia_danboyi   
+# TO make another folder named biocomputing
+cynthiadanboyi05@cloudshell:~$  mkdir biocomputing       
+cynthiadanboyi05@cloudshell:~$ ls     # this command lists all the folders
+# To change the current directory to biocomputing
+cynthiadanboyi05@cloudshell:~$ cd biocomputing  
+#  To download a file from the web
+cynthiadanboyi05@cloudshell:~/biocomputing$ wget https://raw.githubusercontent.com/josoga2/dataset-repos/main/wildtype.fna 
+cynthiadanboyi05@cloudshell:~/biocomputing$   Wget https: // raw.githubusercontent.com/josoga2/dataset-repos/main/wildtype.gbk 
+cynthiadanboyi05@cloudshell:~/biocomputing$  ls # lists all directory content including wildtype.gbk and wildtype.fna
+# To move the file wildtype.fna to the folder cynthia_danboyi  
+cynthiadanboyi05@cloudshell:~/biocomputing$ mv wildtype.fna cynthia_danboyi    
+# To check if the file is mutant 
+cynthiadanboyi05@cloudshell:~/biocomputing$ grep  -i 'tatata' cynthia_danboyi 
+# To check if the file is wild 
+cynthiadanboyi05@cloudshell:~/biocomputing$ grep  -i 'tata' cynthia_danboyi 
+# To print only the highlighted text
+cynthiadanboyi05@cloudshell:~/biocomputing$ grep -o 'tatata' cynthia_danboyi > mutant_file.txt
+# To print the number of lines excluding the header
+cynthiadanboyi05@cloudshell:~/biocomputing$  head -n -1 wildtype.gbk | wc -l  
+# To print the sequence length of the gbk file
+cynthiadanboyi05@cloudshell:~/biocomputing$  grep "^LOCUS" wildtype.gbk | awk '{print $3}' 
+# To print the source organism of the gbk file
+cynthiadanboyi05@cloudshell:~/biocomputing$  grep "SOURCE" wildtype.gbk | head -n 1  
+# To list the genes in the gbk file
+cynthiadanboyi05@cloudshell:~/biocomputing$  grep "/gene=" wildtype.gbk 
+# To clear the terminal
+cynthiadanboyi05@cloudshell:~/biocomputing$  clear
+history # to print all commands used
+# To list the file in the two folder
+cynthiadanboyi05@cloudshell:~/biocomputing$ ls
+
+Project 2
+# To download the miniconda installer
+conda activate base
+# To create an environment named funtools
+(base) cynthiadanboyi05@cloudshell:~$ conda create -n funtools 
+# To activate the environment funtools
+$ Conda activate funtools 
+#To install figlet
+(funtools) cynthiadanboyi05@cloudshell:~$ Conda install -c conda -forge figlet 
+# To print the name cynthia
+Figlet cynthia 
+# To install bwa
+Conda install  -c bioconda bwa 
+# To install blast
+Conda install -c bioconda blast 
+# To install samtools
+Conda install  -c bioconda samtools 
+# To install bedtools
+Conda install  -c bioconda bedtools
+# To install spades.py
+Conda install  -c bioconda spades.py 
+# To install beftools
+Conda install  -c bioconda beftools 
+# To install fastp 
+Conda install -c bioconda fastp
+# To install multiqc
+Conda install  -c bioconda multiqc 
+
+Linkedin link:
