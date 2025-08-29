@@ -33,7 +33,7 @@ $ls bio computing/ && ls cynthia_danboyi
 
 
 Project 2
-#1. To download the miniconda installer
+#1. To activate conda
 $conda activate 
 #2. To create an environment named funtools
 $conda create -n funtools 
