@@ -1,23 +1,23 @@
 Project 1
 #1. To print my name 
-$ echo "Cynthia Danboyi"    
+$echo "Cynthia Danboyi"    
 #2. To make a folder named cynthia_danboyi
 $ mkdir cynthia_danboyi   
-#3. To make another folder named biocomputing
-$  mkdir biocomputing && cd bio computing       
+#3. To make another directory named biocomputing
+$mkdir biocomputing && cd bio computing       
 #4.  To download 3 files from the web
 $wget https://raw.githubusercontent.com/josoga2/dataset-repos/main/wildtype.fna 
 $wget https://raw.githubusercontent.com/josoga2/dataset-repos/main/wildtype.gbk 
 $wget https://raw.githubusercontent.com/josoha2/dataset-repos/main/wildtype.gbk
-#5. To remove duplicates
-$rm wild type.gbk.1
-#6.  To move the file wildtype.fna to the folder cynthia_danboyi  
-$ mv wildtype.fna~/cynthia_danboyi    
+#5.  To move the file wildtype.fna to the folder cynthia_danboyi  
+$ mv wildtype.fna~/cynthia_danboyi  
+#6. To remove duplicates
+$rm wildtype.gbk.1 
 #7. To check if the file is mutant or wild type ('tatata' or 'tata')
 $grep  -o 'tatata' wildtype.fna
-$grep -o 'tata' wild type.fna
+$grep -o 'tata' wildtype.fna
 #8. To print only the highlighted text
-$ grep -i'tata' wildtype.fna > mutant_file.txt
+$ grep -o'tata' wildtype.fna > mutant_file.txt
 #9. To print the number of lines excluding the header
 $head -n -1 wildtype.gbk | wc -l  
 #10.To print the sequence length of the gbk file
@@ -29,7 +29,7 @@ $grep "/gene=" wildtype.gbk
 #13. To clear the terminal
 $clear && history
 #14. To list the file in the two folder
-$ls
+$ls bio computing/ && ls cynthia_danboyi
 
 
 Project 2
